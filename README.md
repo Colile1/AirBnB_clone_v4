@@ -127,8 +127,38 @@ TestBaseModel class:
 * `def test_user_class_docstring(self)` - Test for the User class docstring
 
 
+## Web Dynamic Features
+
+The web_dynamic directory introduces dynamic functionality to the HBNB interface:
+
+* **Dynamic Filtering**: Users can select amenities to filter available places
+* **Real-time Updates**: Places are loaded dynamically via AJAX calls
+* **API Integration**: Communicates with the backend API for status and data
+* **Caching**: Uses UUID-based cache busting for static assets
+
+To run the web_dynamic version:
+```bash
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.0-hbnb
+```
+
+## Web Dynamic Features
+
+The web_dynamic directory introduces dynamic functionality to the HBNB interface:
+
+* **Dynamic Filtering**: Users can select amenities to filter available places
+* **Real-time Updates**: Places are loaded dynamically via AJAX calls
+* **API Integration**: Communicates with the backend API for status and data
+* **Caching**: Uses UUID-based cache busting for static assets
+
+To run the web_dynamic version:
+```bash
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.0-hbnb
+```
+
 ## Examples of use
 ```
+
+
 vagrantAirBnB_clone$./console.py
 (hbnb) help
 
@@ -153,7 +183,23 @@ EOF  all  create  destroy  help  quit  show  update
 ## Bugs
 No known bugs at this time. 
 
+## API Endpoints
+
+The web_dynamic version uses these API endpoints:
+
+* `/api/v1/status/` - Checks API availability
+* `/api/v1/places_search/` - Retrieves filtered places data
+
+## API Endpoints
+
+The web_dynamic version uses these API endpoints:
+
+* `/api/v1/status/` - Checks API availability
+* `/api/v1/places_search/` - Retrieves filtered places data
+
 ## Authors
+
+
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
@@ -161,4 +207,10 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 
 Second part of Airbnb: Joann Vuong
 ## License
-Public Domain. No copy write protection. 
+Public Domain. No copy write protection.
+
+## Advanced Features
+- Dynamic review visibility toggle
+- Client-side review caching
+- Real-time API status monitoring
+- Multi-criteria search filters
